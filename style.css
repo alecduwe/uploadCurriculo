@@ -1,0 +1,383 @@
+:root {
+    --title-color: rgb(118, 228, 7); 
+    --primary-color: #5f5dd4;
+    --whiteColor: #f00000;
+    --descriptionsColor: #099bb4;
+    --schoolColor: #2c19da;
+    --SouBranco: #ffffff;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+ font-family: Roboto, sans-serif;
+
+}
+
+
+body {
+
+    background:  #eeeeee;
+    -webkit-font-smoothing: antialiased;
+    
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Ubuntu, sans-serif;
+    color: var(--title-color);
+    text-decoration: none;
+}
+
+/* Cabeçario do perfil e descrição */
+
+body::after {
+    content: "";
+    position: absolute;
+    background: #afafaf;
+
+    top: -20px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;   
+    height: 16rem;
+}
+
+body .content {
+    width: 1100;
+    max-width: 1100px
+}
+
+body .content header {
+    display: flex;
+    flex-direction: column;
+    
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 0px 100px 50px 30px;
+
+}
+
+body .content header a {
+    text-decoration: none;
+}
+
+body .content header .visualProfile {
+    display: flex;
+    
+    margin: 60px auto 40px 60px;
+    align-items: center;
+
+}
+
+body .content header .visualProfile img {
+    border-radius: 8px;
+}
+
+body .content header .visualProfile strong {
+    margin-left: 40px;
+
+    font-size: 40px;
+
+    color: var(--primary-color);
+}
+
+body .content header .visualProfile span h2 {
+    margin: auto 9px auto 35px;
+
+}
+
+body .content header .visualProfile span h3 {
+    margin: auto 9px auto 35px;
+}
+
+body .content header .visualProfile span .imgsBox {
+    display: flex;
+    margin-left: 25px;
+}
+
+body .content header .visualProfile span .imgsBox img {
+    margin: 9px 9px auto ;
+}
+
+
+/* Aqui começa o corpo de descrição */
+
+
+body .content main .introduction  {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    margin: -40px 180px auto 30px;
+}
+
+body .content main .introduction h1 {
+    margin: auto auto 30px 15px;
+}
+
+body .content main .introduction p {
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+
+    margin-left: 50px;
+
+    color: var(--primary-color);
+}
+
+body .content main .introduction::after {
+        content: "";
+        position: absolute;
+        background: #e4e4e4;
+        
+        top: 620px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: -1;   
+        height: 38rem;
+    
+}
+
+/* Aqui começa a parte da formação estudantil */
+
+body .content main .formacao {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    margin: 80px 180px auto 30px;
+}
+
+body .content main .formacao h1 {
+    margin: auto auto 30px 15px;
+}
+
+body .content main .formacao img {
+    align-items: center;
+    border-radius: 8px;
+
+    margin: 20px auto 8px 30px;
+
+    height: 180px;
+    width: 700px;
+
+    border-radius: 8px;
+
+}
+
+body .content main .formacao h3 {
+    color: var(--primary-color);
+    font: bold;
+    margin: 2px -20px 40px 30px;
+
+    
+} 
+
+
+body .content main .formacao img.ufsm {
+   
+    align-items: center;
+    border-radius: 8px;
+
+    margin: -45px auto -40px 30px;
+
+    height: 280px;
+    width: 350px;
+
+    border-radius: 8px;
+}
+
+body .content main .certificados {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    margin: 80px 180px auto 30px;
+}
+
+body .content main .certificados h1{
+    margin-top: -90px;
+}
+
+body .content main .certificados ul {
+    display: flex;
+    flex-direction: column;
+
+    margin: 20px auto 60px 30px;
+
+    justify-content: space-between;
+
+    height: 100px;
+
+    color: var(--primary-color);
+}
+
+body article{
+    height: 2000px;
+    width: auto;
+}
+
+body .content main form {
+    display: flex;
+    flex-direction: column ;
+    width: 900px;
+
+    margin: auto auto 40px 30px; 
+}
+
+body .content form h1 {
+    margin-left: 15px;
+    margin-bottom: 30px;
+
+    font-size: 34px;
+}
+
+body form fieldset {
+    border: 0;
+}
+
+body .content form .FE {
+    margin: auto auto 15px 50px;
+}
+
+body .content form fieldset .field-group1 {
+    display: flex;
+    
+}
+
+
+form .field-group1 .field1 {
+    display: flex;
+    flex-direction: column;
+
+    height:90px;
+    width: 130px;
+
+    margin: 30px 0 50px 50px;
+
+    justify-content: space-between;
+
+    color: var(--primary-color);
+    
+}   
+
+
+
+
+body .content form .BE {
+    margin: auto auto 15px 50px;
+}
+
+body .content form fieldset .field-groupBE {
+    display: flex;
+    
+}
+
+
+form .field-groupBE .field3 {
+    display: flex;
+    flex-direction: column;
+
+    height:90px;
+    width: 130px;
+
+    margin: 30px 0 50px 50px;
+
+    justify-content: space-between;
+
+    color: var(--primary-color);
+    
+}  
+
+form .field-groupBE .field4 img {
+    justify-content: space-between;
+    margin-left: 20px;
+
+} 
+
+
+
+body .content form .OB {
+    margin: auto auto 15px 50px;
+}
+
+body .content form fieldset .field-groupOB {
+    display: flex;
+    
+}
+
+
+form .field-groupOB .field5 {
+    display: flex;
+    flex-direction: column;
+
+    height:90px;
+    width: 130px;
+
+    margin: 30px 0 50px 50px;
+
+    
+
+    color: var(--primary-color);
+    
+}  
+
+form .field-groupOB .field6 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 8px;
+} 
+
+form .field-groupOB .field6 img {
+    border-radius: 8px;
+    display:flex;
+    justify-content: space-between;
+
+    margin-left: 20px;
+
+}
+
+body .content main::after {
+    content: "";
+        position: absolute;
+        background: #e4e4e4;
+        
+        top: 1470px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: -1;   
+        height: 40rem;
+    
+}
+
+::after {
+    content: "";
+        position: absolute;
+        background: #ffffff;
+        
+        top: 300px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: -1;   
+        height: 17rem;
+    
+}
+
+
+
