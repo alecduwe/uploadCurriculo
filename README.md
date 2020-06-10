@@ -1,2 +1,0 @@
-# uploadCurriculo
-Currículo para Portfólio 
